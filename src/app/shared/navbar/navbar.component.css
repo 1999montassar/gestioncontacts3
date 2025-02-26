@@ -1,0 +1,19 @@
+.navbar {
+    padding: 10px;
+  }
+  
+  .navbar .btn {
+    font-size: 1.2rem;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+  }
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  /* Example for dark mode toggle, modify as per your design */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}

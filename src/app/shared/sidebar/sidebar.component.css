@@ -1,0 +1,27 @@
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 8px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  .sidebar a.active {
+    color: blue; /* Active link color */
+  }
+  
+  .sidebar ul ul {
+    padding-left: 20px;
+  }
+  
+  .sidebar li a:hover {
+    color: #007bff;
+  }
+  

@@ -1,0 +1,14 @@
+/* app.component.css */
+.container-fluid {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .router-outlet {
+    flex-grow: 1;
+  }
+  

@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Dark/Light Mode Button -->
+    <button class="btn btn-outline-secondary me-2" (click)="toggleDarkMode()">
+      <i class="bi" [class.bi-moon]="!isDarkMode" [class.bi-sun]="isDarkMode"></i>
+    </button>
+
+    <!-- Search Bar -->
+    <form class="d-flex flex-grow-1 me-3">
+      <input class="form-control me-2" type="search" placeholder="Rechercher un contact..." aria-label="Search">
+      <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+
+    <!-- Notifications -->
+    <button class="btn btn-outline-warning me-2 position-relative">
+      <i class="bi bi-bell"></i>
+      <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">3</span>
+    </button>
+
+    <!-- Messages -->
+    <button class="btn btn-outline-success me-2" (click)="toggleMessages()">
+      <i class="bi bi-envelope"></i>
+    </button>
+
+    <!-- Profile Dropdown -->
+    <div class="dropdown">
+      <button class="btn btn-outline-dark dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown">
+        <i class="bi bi-person-circle"></i>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+        <li><a class="dropdown-item" routerLink="/settings">Paramètres</a></li>
+        <li><a class="dropdown-item text-danger" (click)="logout()">Déconnexion</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar with routerLink -->
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/contacts">Contacts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/messages">Messages</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/trash">Corbeille</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/settings">Paramètres</a>
+  </li>
+</ul>
